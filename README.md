@@ -1,2 +1,27 @@
-# order-management-system-before-build
-Source code  about a Vue demo of order-management-system.
+# order-management-system
+
+*Source code  about a Vue demo of order-management-system.*
+
+## Project setup
+
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
