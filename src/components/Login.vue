@@ -1,14 +1,14 @@
 <template>
   <el-container>
-    <el-header>
+    <el-header style="margin-top: 15px">
       <el-row>
-        <el-col :span="4">
+        <el-col :span="12">
           <p class="nav-left">
             <i class="logo"></i>
             <span>订单管理系统</span>
           </p>
         </el-col>
-        <el-col :span="20">
+        <el-col :span="12">
           <p class="nav-right">
             <span>概览</span>
             <span>文档</span>
@@ -18,10 +18,10 @@
     </el-header>
     <el-main>
       <el-row>
-        <el-col :span="12">
+        <el-col :xs="24" :sm="16" align="center">
           <img src="../assets/working.png" class="working" />
         </el-col>
-        <el-col :span="12">
+        <el-col :xs="24" :sm="8">
           <div>
             <h2 style="color: #409eff">开始与众不同</h2>
             <el-form label-width="" label-position="left">
@@ -34,6 +34,7 @@
               </el-form-item>
               <el-form-item label="" class="password-item">
                 <el-input
+                  @keyup.enter.native="validForm"
                   prefix-icon="el-icon-lock"
                   placeholder="密码"
                   show-password
@@ -171,11 +172,11 @@ p {
   height: 30px;
   margin-right: 8px;
   background: url("../assets/logo.png");
-  background-size: contain;
+  background-size: cover;
   vertical-align: middle;
 }
 .nav-left span {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
   color: #409eff;
 }
@@ -200,6 +201,8 @@ p {
   margin-bottom: 10px;
 }
 .footer-box {
+  height: 50px;
+  line-height: 25px;
   text-align: center;
   background-color: #f9fafc;
   font-size: 12px;

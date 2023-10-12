@@ -6,6 +6,9 @@
     <p>性别：男🚹</p>
     <p>年龄：24岁</p>
     <p>职业：程序员-programmer</p>
+    <el-button @click="$router.back()" type="primary" size="mini"
+      >返回上一页</el-button
+    >
   </div>
 </template>
 

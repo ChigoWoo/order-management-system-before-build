@@ -297,6 +297,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+p {
+  padding: 0;
+  margin: 0;
+}
 .header {
   background-color: #409eff;
   height: 64px !important;
@@ -359,6 +363,8 @@ export default {
 }
 
 .footer-box {
+  height: 50px;
+  line-height: 25px;
   text-align: center;
   background-color: #f9fafc;
   font-size: 12px;
