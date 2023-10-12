@@ -4,7 +4,7 @@
       <el-row>
         <el-col :span="6">
           <p class="nav-left">
-            <i class="el-icon-bank-card"></i><span>订单管理系统</span>
+            <i class="el-icon-bank-card"></i><span>交易管理系统</span>
           </p>
         </el-col>
         <el-col :span="15">
@@ -17,7 +17,7 @@
             :router="true"
             style="border: none; background: #409eff"
           >
-            <el-menu-item class="el-menu-item" index="/">订单管理</el-menu-item>
+            <el-menu-item class="el-menu-item" index="/">交易管理</el-menu-item>
             <el-menu-item class="el-menu-item" index="/operation-center"
               >处理中心</el-menu-item
             >
@@ -161,7 +161,7 @@
               <div
                 style="margin: 15px 20px; font-size: 16px; font-weight: bold"
               >
-                正常订单
+                交易成功订单
               </div>
               <el-table :data="normalOrder" height="500" border stripe>
                 <el-table-column
@@ -200,7 +200,7 @@
               <div
                 style="margin: 15px 20px; font-size: 16px; font-weight: bold"
               >
-                退款订单
+                交易失败订单
               </div>
               <el-table :data="returnOrder" height="500" border stripe>
                 <el-table-column
@@ -278,6 +278,7 @@ export default {
   methods: {
     logout() {
       localStorage.clear();
+      sessionStorage.clear();
       this.$router.push("/login");
     },
     moneyFormat(val, text) {

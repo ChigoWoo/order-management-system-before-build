@@ -5,7 +5,7 @@
         <el-col :span="12">
           <p class="nav-left">
             <i class="logo"></i>
-            <span>订单管理系统</span>
+            <span>交易管理系统</span>
           </p>
         </el-col>
         <el-col :span="12">
@@ -57,18 +57,18 @@
         </el-col>
       </el-row>
       <el-row :gutter="20" style="margin-top: 40px">
-        <el-col :span="8">
+        <el-col :xs="24" :sm="8">
           <div class="main-intro">
             <i class="el-icon-magic-stick el-icon"></i>
             <h2 class="magic-stick">美观而强大</h2>
             <p>
-              你会发现管理订单从未如此简单，
+              你会发现管理交易从未如此简单，
               无需任何基础立即上手，风格简约不简单，
               多终端自适应，响应快如闪电。
             </p>
           </div>
         </el-col>
-        <el-col :span="8">
+        <el-col :xs="24" :sm="8">
           <div class="main-intro">
             <i class="el-icon-s-marketing el-icon"></i>
             <h2 class="s-marketing">体验超出预期</h2>
@@ -77,12 +77,12 @@
             </p>
           </div>
         </el-col>
-        <el-col :span="8">
+        <el-col :xs="24" :sm="8">
           <div class="main-intro">
             <i class="el-icon-odometer el-icon"></i>
             <h2 class="odometer">轻松完成工作</h2>
             <p>
-              绑定支付宝或微信，即可开始线上销售。无论您是单个商品还是上百个商品。都可以轻松实现线上交易。
+              绑定支付宝或微信，即可开始线上交易。无论您是单个商品还是上百个商品。都可以轻松实现线上交易。
             </p>
           </div>
         </el-col>
@@ -209,6 +209,13 @@ p {
 }
 .el-icon {
   font-size: 30px;
+}
+.main-intro {
+  margin-top: 15px;
+}
+
+.main-intro p {
+  margin-top: 10px;
 }
 .main-intro .el-icon-magic-stick,
 h2.magic-stick {
